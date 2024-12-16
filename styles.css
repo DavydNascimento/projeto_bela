@@ -1,8 +1,5 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #e08cc0;
+body { background-image: url('Image/fundo.png.png'); /* Substitua pelo caminho da sua imagem */ background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */ background-repeat: no-repeat; /* Impede que a imagem se repita */ background-attachment: fixed; /* Faz a imagem de fundo permanecer fixa ao rolar a página */
+
 }
 
 header {
