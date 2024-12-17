@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendamento</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Script&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <header>
+        <img src="Image/logo.png.jpg" width="230" height="100">
         <h1>Design de Sobrancelhas e Cílios</h1>
         <nav>
             <a href="index.html">Início</a>
@@ -21,30 +26,33 @@
         <form id="bookingForm">
             <label for="name">Nome:</label>
             <input type="text" id="name" name="name" required>
-            
+
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            
+
             <label for="service">Serviço:</label>
             <select id="service" name="service" required>
                 <option value="sobrancelhas">Design de Sobrancelhas</option>
                 <option value="cilios">Design de Cílios</option>
                 <option value="sobrancelha-cilios">Sobrancelha e Cílios</option>
             </select>
-            
+
             <label for="date">Data:</label>
             <input type="date" id="date" name="date" required>
-            
+
             <label for="time">Hora:</label>
             <input type="time" id="time" name="time" required>
-            
+
             <button type="submit">Agendar</button>
         </form>
+        <script src="script.js"></script>
+        <div class="iframe-container">
+            <iframe src="https://calendar.google.com/calendar/embed?src=6bcea0fbe90230748332b61ebcdfbd714347dd2b9b68525e570ddd02bcd4465c%40group.calendar.google.com&ctz=America%2FSao_Paulo" style="border: 0" width="flex" height="flex" frameborder="0" scrolling="no"></iframe>
+            </div>
     </main>
     <footer>
         <p>© 2024 Design de Sobrancelhas e Cílios</p>
     </footer>
-    <script src="script.js"></script>
-    <iframe src="https://calendar.google.com/calendar/embed?src=6bcea0fbe90230748332b61ebcdfbd714347dd2b9b68525e570ddd02bcd4465c%40group.calendar.google.com&ctz=America%2FSao_Paulo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 </body>
+
 </html>

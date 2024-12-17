@@ -1,5 +1,21 @@
-body { background-image: url('Image/fundo.png.png'); /* Substitua pelo caminho da sua imagem */ background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */ background-repeat: no-repeat; /* Impede que a imagem se repita */ background-attachment: fixed; /* Faz a imagem de fundo permanecer fixa ao rolar a página */
+body {
+    background-image: url('Image/fundo.png.png');
+    /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    /* Ajusta a imagem para cobrir todo o fundo */
+    background-repeat: no-repeat;
+    /* Impede que a imagem se repita */
+    background-attachment: fixed;
+    /* Faz a imagem de fundo permanecer fixa ao rolar a página */
 
+}
+
+h1 {
+
+    font-family: "League Script", cursive;
+    font-weight: 1200;
+    font-size: 60px;
+    font-style: bold;
 }
 
 header {
