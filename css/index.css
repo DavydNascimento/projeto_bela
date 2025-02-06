@@ -1,0 +1,56 @@
+body {
+    background-image: url('Image/fundo.png.png');
+    /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    /* Ajusta a imagem para cobrir todo o fundo */
+    background-repeat: no-repeat;
+    /* Impede que a imagem se repita */
+    background-attachment: fixed;
+    /* Faz a imagem de fundo permanecer fixa ao rolar a página */
+
+}
+
+h1 {
+
+    font-family: "League Script", cursive;
+    font-weight: 1200;
+    font-size: 60px;
+    font-style: bold;
+}
+
+header {
+    background-color: #ce3f97;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #8d004e;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
