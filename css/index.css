@@ -1,21 +1,12 @@
 body {
-    background-image: url('Image/fundo.png.png');
-    /* Substitua pelo caminho da sua imagem */
-    background-size: cover;
-    /* Ajusta a imagem para cobrir todo o fundo */
-    background-repeat: no-repeat;
-    /* Impede que a imagem se repita */
-    background-attachment: fixed;
-    /* Faz a imagem de fundo permanecer fixa ao rolar a página */
-
-}
-
-h1 {
-
-    font-family: "League Script", cursive;
-    font-weight: 1200;
-    font-size: 60px;
-    font-style: bold;
+    background-image: url('Image/fundo.png.png'); /* Imagem de fundo */
+    background-size: cover; /* Cobrir todo o fundo */
+    background-repeat: no-repeat; /* Não repetir a imagem */
+    background-attachment: fixed; /* Fixar a imagem ao rolar */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    position: relative; /* Permite posicionar elementos filhos de forma absoluta */
 }
 
 header {
@@ -23,6 +14,8 @@ header {
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    position: relative; /* Mantém o header acima da imagem de fundo */
+    z-index: 2; /* Garante que o header fique acima do main */
 }
 
 nav a {
@@ -34,6 +27,12 @@ nav a {
 main {
     padding: 2rem;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.414); /* Fundo semi-transparente */
+    border-radius: 10px; /* Bordas arredondadas */
+    margin: 20px auto; /* Centraliza o main */
+    max-width: 600px; /* Largura máxima */
+    position: sticky; /* Permite sobrepor a imagem de fundo */
+    z-index: 1; /* Garante que o main fique acima da imagem de fundo */
 }
 
 .btn {
@@ -43,6 +42,22 @@ main {
     background-color: #000000;
     color: #fff;
     text-decoration: none;
+    border-radius: 5px;
+}
+
+.servicos-imagem {
+    width: 100%;
+    max-width: 700px;
+    height: 650px;
+    width: 100%; /* Ocupa 100% da largura da tela */
+    max-width: 14000px; /* Define uma largura máxima */
+    border: 0px solid #ccc;
+    border-radius: 10px;
+    margin: 200px 0;
+    position: absolute; /* Posiciona a imagem de forma absoluta */
+    top: 0;
+    left: 0;
+    z-index: 0; /* Coloca a imagem atrás do main */
 }
 
 footer {
@@ -50,7 +65,8 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    position: fixed; /* Fixa o footer na tela */
+    bottom: 0; /* Coloca o footer no final da tela */
+    width: 100%; /* Ocupa toda a largura */
+    z-index: 1000; /* Garante que o footer fique acima de outros elementos */
 }

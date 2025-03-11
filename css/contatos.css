@@ -1,70 +1,86 @@
+/* Estilos gerais */
 body {
-    background-image: url('Image/fundo.png.png');
-    /* Substitua pelo caminho da sua imagem */
-    background-size: cover;
-    /* Ajusta a imagem para cobrir todo o fundo */
-    background-repeat: no-repeat;
-    /* Impede que a imagem se repita */
-    background-attachment: fixed;
-    /* Faz a imagem de fundo permanecer fixa ao rolar a página */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Cor de fundo de fallback */
+    color: #333;
+    position: relative; /* Permite posicionar elementos filhos de forma absoluta */
 }
 
-h1 {
-    font-family: "League Script", cursive;
-    font-weight: 1200;
-    font-size: 60px;
-    font-style: bold;
-}
-
+/* Header */
 header {
     background-color: #ce3f97;
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    position: relative; /* Mantém o header acima da imagem de fundo */
+    z-index: 2; /* Garante que o header fique acima do container */
+}
+
+header img {
+    vertical-align: middle;
+}
+
+header h1 {
+    font-family: "League Script", cursive;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 10px 0;
 }
 
 nav a {
     color: #fff;
     margin: 0 1rem;
     text-decoration: none;
+    font-weight: bold;
 }
 
-main {
-    padding: 2rem;
-    text-align: center;
+nav a:hover {
+    text-decoration: underline;
 }
 
-.btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #000000;
-    color: #fff;
-    text-decoration: none;
-}
-
-footer {
-    background-color: #8d004e;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    position: absolute;
-    bottom: 0;
+/* Imagem de fundo */
+.servicos-imagem {
     width: 100%;
+    max-width: 700px;
+    height: 650px;
+    width: 100%; /* Ocupa 100% da largura da tela */
+    max-width: 14000px; /* Define uma largura máxima */
+    border: 0px solid #ccc;
+    border-radius: 10px;
+    margin: 200px 0;
+    position: absolute; /* Posiciona a imagem de forma absoluta */
+    top: 0;
+    left: 0;
+    z-index: 0; /* Coloca a imagem atrás do main */
 }
 
+/* Container (formulário) */
 .container {
-    width: 50%;
-    margin: auto;
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
+    position: relative; /* Permite sobrepor a imagem de fundo */
+    z-index: 1; /* Garante que o container fique acima da imagem */
+    background-color: rgba(255, 255, 255, 0.414); /* Fundo semi-transparente */
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px; /* Largura máxima do contêiner */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-h2 {
+/* Título do contêiner */
+.container h2 {
+    font-family: "League Script", cursive;
+    font-size: 40px;
     text-align: center;
-    color: #333;
+    margin-bottom: 20px;
+    color: #8d004e; /* Cor do título */
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
 }
 
 .form-group {
@@ -73,31 +89,44 @@ h2 {
 
 .form-group label {
     display: block;
-    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
-.form-group input, .form-group textarea {
+.form-group input,
+.form-group textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box;
+    font-size: 16px;
 }
 
 .form-group textarea {
-    resize: vertical;
+    resize: vertical; /* Permite redimensionar verticalmente */
 }
 
 .form-group button {
-    width: 100%;
-    padding: 10px;
-    background: #000000;
+    background-color: #8d004e;
     color: #fff;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
 }
 
 .form-group button:hover {
-    background: #555;
+    background-color: #6b0037;
+}
+
+/* Footer */
+footer {
+    background-color: #8d004e;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    z-index: 2; /* Garante que o footer fique acima do container */
+    margin-top: 20px;
 }
